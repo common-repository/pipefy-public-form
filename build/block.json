@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pipefy/pipefy-public-form",
+  "version": "0.1.0",
+  "title": "Pipefy Public Form",
+  "category": "widgets",
+  "icon": "",
+  "description": "This will embed a Pipefy public form on your WordPress website",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "blockStyle": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "width": "65",
+          "height": "400"
+        },
+        "tablet": {
+          "width": "75",
+          "height": "400"
+        },
+        "mobile": {
+          "width": "100",
+          "height": "500"
+        }
+      }
+    },
+    "blockId": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "pipefy-public-form",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
